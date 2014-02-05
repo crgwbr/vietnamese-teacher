@@ -17,7 +17,6 @@ def read_csv(filename):
 def process_row(row):
     english = row.pop(0)
     vietnamese = [word for word in row if len(word) > 0]
-    vietnamese = map(lambda word: word, vietnamese)
     return (english, vietnamese)
 
 
